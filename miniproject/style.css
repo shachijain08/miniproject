@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box; 
+    font-family: 'Courier New', monospace;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+  }
+  #main > nav, 
+  #main > aside {
+    flex: 0 0 20vw;
+    background: beige;
+  }
+  #main > nav {
+    order: -1;
+  }
+  header, footer {
+    background: rgb(220, 136, 223);
+    height: 20vh;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  #dora {
+    width: 1000px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
